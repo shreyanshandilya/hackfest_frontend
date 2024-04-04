@@ -18,7 +18,7 @@ const Wrapper = styled(Box)({
     justifyContent: "center",
     alignItems: "center",
     zIndex: 9999,
-    backgroundColor: "black",
+    backgroundColor: "white",
     color: "#000",
     animation: "changeBoxShadow 12s infinite alternate"
   },
@@ -26,7 +26,7 @@ const Wrapper = styled(Box)({
     ".navbar": {
       height: "65px",
       lineHeight: "50px",
-      backgroundColor: "#000",
+      backgroundColor: "#ffffff",
        
     },
     ".toolbar": {

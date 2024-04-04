@@ -7,7 +7,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import StyledButton from "./button";
 import CssBaseline from "@mui/material/CssBaseline";
-import srijanlogo from "../Footer/srijan Light (3).png";
+import srijanlogo from "../../src/Group 33.png";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
@@ -37,7 +37,7 @@ const StyledDrawer = styled(Drawer)({
 });
 
 const Navbar = () => {
-  const location = useLocation();
+   
   const navigate = useNavigate();
   const window = document.body;
   // const mobileView = window.length >= 600;
@@ -91,7 +91,7 @@ const Navbar = () => {
                     sx={{ color: "#fff", marginRight: "100px" }}
                   >
                     <Button component={Link} to="/">
-                      <img src={srijanlogo} width="100px" alt="Srijan"></img>
+                      <img src={srijanlogo} width="70px" alt="Hackfest"></img>
                     </Button>
                   </Typography>
 
@@ -118,104 +118,14 @@ const Navbar = () => {
                     <Link to="/merchant">
                       <StyledButton name="MERCHANDISE" />
                     </Link>
-                    {/* <ScrollRouter
-                      to="sponsor"
-                      spy={true}
-                      smooth={true}
-                      duration={3000}
-                    >
-                      <StyledButton name="Sponsor"></StyledButton>
-                    </ScrollRouter> */}
+                    
                     <Link to="/about">
                       <StyledButton name="ABOUT"></StyledButton>
                     </Link>
                     <Link to="/team">
                       <StyledButton name="CORE TEAM"></StyledButton>
                     </Link>
-                    <div className="sm:block">
-                      <Dropdown
-                        label=""
-                        dismissOnClick={false}
-                        renderTrigger={() => (
-                          <button
-                            id="dropdownUserAvatarButton"
-                            data-dropdown-toggle="dropdownAvatar"
-                            type="button"
-                          >
-                            <span class="sr-only">Open user menu</span>
-                            {localStorage.getItem("token") != null ||
-                              localStorage.getItem("token") != undefined ? (
-                              <strong>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="35"
-                                  height="35"
-                                  fill="white"
-                                  class="bi bi-person"
-                                  viewBox="0 0 16 16"
-                                  style={{ marginTop: "15px" }}
-                                >
-                                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                                </svg>
-                              </strong>
-                            ) : (
-                              /* <i
-                                class="fa-solid fa-user"
-                                style={{
-                                  color: "white",
-                                  fontSize: "25px",
-                                  marginTop: "15px",
-                                }}
-                              ></i> */
-                              <Link>
-                                <StyledButton name="Login/Register"></StyledButton>
-                              </Link>
-                            )}
-                          </button>
-                        )}
-                      >
-                        {localStorage.getItem("token") == null ||
-                          localStorage.getItem("token") == undefined ? (
-                          <div>
-                            <Dropdown.Item className="h-full w-full">
-                              <Link to={"/register"}>Register</Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                              <Link to={"/login"}>Login</Link>
-                            </Dropdown.Item>
-                          </div>
-                        ) : (
-                          <div>
-                            <Link to={"/"}>
-                              {" "}
-                              <Dropdown.Item className="h-full w-full">
-                                {localStorage.getItem("email")}
-                              </Dropdown.Item>
-                            </Link>
-                            <Link to={"/profile"}>
-                              {" "}
-                              <Dropdown.Item className="h-full w-full">
-                                PROFILE
-                              </Dropdown.Item>
-                            </Link>
-
-                            <Link
-                              onClick={() => {
-                                localStorage.clear();
-                                navigate("/");
-                              }}
-                            >
-                              {" "}
-                              <Dropdown.Item>
-                                {" "}
-                                <i class="fa-solid fa-right-from-bracket"></i>{" "}
-                                LOGOUT
-                              </Dropdown.Item>
-                            </Link>
-                          </div>
-                        )}
-                      </Dropdown>
-                    </div>
+                     
                     {/* <StyledButton name="Sponsors"></StyledButton>
 
                   <StyledButton name="Merchandise"></StyledButton>

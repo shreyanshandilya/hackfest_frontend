@@ -9,20 +9,24 @@ const Button = styled.button`
   outline: none;
   transition: 0.1s;
   background-color: transparent;
-  border: dashed yellow 1px;
+   
   font-size: 14px;
   
-  color: #ddebf0;
+  color: #5691f5;
   
   &:hover #rightArrow {
     background-color:rgb(216 115 78);
     left: -15%;
+    color:#c969a3;
     animation: 0.6s ease-in-out both infinite alternate rightArrow8;
   }
-
+  &:hover{
+    color:#c969a3;
+  }
   &:hover #leftArrow {
     background-color: rgb(216 115 78);
     left: 103%;
+    
     animation: 0.6s ease-in-out both infinite alternate leftArrow8;
   }
 
