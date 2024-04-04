@@ -90,9 +90,9 @@ const Navbar = () => {
                     component="div"
                     sx={{ color: "#fff", marginRight: "100px" }}
                   >
-                    <Button component={Link} to="/">
-                      //<img src={srijanlogo} width="100px" alt="Srijan"></img>
-                    </Button>
+{/*                     <Button component={Link} to="/">
+                      <img src={srijanlogo} width="100px" alt="Srijan"></img>
+                    </Button> */}
                   </Typography>
 
                   <Box
