@@ -1,8 +1,7 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styled from "@emotion/styled";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MobileLink from "./Mobile_Link";
-
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import StyledButton from "./button";
@@ -11,20 +10,14 @@ import srijanlogo from "../../src/Group 33.png";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link, Outlet } from "react-router-dom";
-import { Link as ScrollRouter } from "react-scroll";
-
-import { Dropdown } from "flowbite-react";
-
 import Wrapper from "./styles";
+
 
 const StyledDrawer = styled(Drawer)({
   ".bottomBar": {
@@ -37,22 +30,12 @@ const StyledDrawer = styled(Drawer)({
 });
 
 const Navbar = () => {
-   
   const navigate = useNavigate();
   const window = document.body;
-  // const mobileView = window.length >= 600;
-  // useEffect(() => {
-  //   console.log(mobileView);
-  // }, [window.length]);
-
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
-  };
-
-  const scrollDown = () => {
-    handleDrawerToggle();
   };
 
   return (
@@ -105,32 +88,23 @@ const Navbar = () => {
                       justifyContent: "space-around",
                     }}
                   >
-                    {/* <Link to="/admin">
-                      <StyledButton name="Events" />
-                    </Link> */}
                     <Link to="/event">
                       <StyledButton name="EVENTS" />
                     </Link>
                     <Link to="/accomodation">
-                        <StyledButton name="ACCOMODATION" />
-                      </Link>
-                    
+                      <StyledButton name="ACCOMODATION" />
+                    </Link>
+
                     <Link to="/merchant">
                       <StyledButton name="MERCHANDISE" />
                     </Link>
-                    
+
                     <Link to="/about">
                       <StyledButton name="ABOUT"></StyledButton>
                     </Link>
                     <Link to="/team">
                       <StyledButton name="CORE TEAM"></StyledButton>
                     </Link>
-                     
-                    {/* <StyledButton name="Sponsors"></StyledButton>
-
-                  <StyledButton name="Merchandise"></StyledButton>
-                  <StyledButton name="About Us"></StyledButton>
-                  <StyledButton name="Teams"></StyledButton> */}
                   </Box>
                   <Box
                     sx={{
@@ -186,8 +160,8 @@ const Navbar = () => {
                   {/* <Divider /> */}
 
                   <List>
-                    {localStorage.getItem("token") == null ||
-                      localStorage.getItem("token") == undefined ? (
+                    {localStorage.getItem("token") === null ||
+                    localStorage.getItem("token") === undefined ? (
                       <div>
                         <Link to={"/register"}>
                           <MobileLink url="/register" text="REGISTER" />
@@ -210,34 +184,17 @@ const Navbar = () => {
                     <Link to={"/event"}>
                       <MobileLink url="/event" text="EVENTS" />
                     </Link>
-
-                    {/* <ScrollRouter
-                      to="sponsor"
-                      spy={true}
-                      smooth={true}
-                      duration={3000}
-                      onClick={scrollDown}
-                    >
+                    <Link to={"/accomodation"}>
+                      {" "}
                       <MobileLink
-                        text="Sponsors"
-                        component="a"
-                        href="https://linktr.ee/Concetto_Workshops"
-                        target="_blank"
-                        rel="noreferrer"
-                      />
-                    </ScrollRouter> */}
-                    
-                              <Link to={"/accomodation"}>
-                                {" "}
-                                <MobileLink
                         text="ACCOMODATION"
                         component="a"
                         url="/merchant"
                         target="_blank"
                         rel="noreferrer"
                       />
-                              </Link>
-                             
+                    </Link>
+
                     <Link to={"/merchant"}>
                       <MobileLink
                         text="MERCHANDISE"
@@ -247,8 +204,8 @@ const Navbar = () => {
                         rel="noreferrer"
                       />
                     </Link>
-                    {localStorage.getItem("token") == null ||
-                      localStorage.getItem("token") == undefined ? (
+                    {localStorage.getItem("token") === null ||
+                    localStorage.getItem("token") === undefined ? (
                       ""
                     ) : (
                       <>
@@ -273,35 +230,12 @@ const Navbar = () => {
                         rel="noreferrer"
                       />
                     </Link>
-
-                    {/* <ListItem
-                      disablePadding
-                      sx={{ borderBottom: "1px solid white" }}
-                    >
-                      <ListItemButton
-                        sx={{
-                          textAlign: "center",
-                          "&:hover": { color: "#f7f75d" },
-                        }}
-                        className="mobile-nav-links"
-                      >
-                        <ListItemText
-                          className="mobile-nav-links"
-                          primaryTypographyProps={{
-                            fontSize: "1.5em",
-                            fontFamily: `"ReFormationSansRegular", sans-serif !important`,
-                          }}
-                          primary="Sponsors"
-                        />
-                      </ListItemButton>
-                    </ListItem> */}
-                    {/* <MobileLink url="/tshirt" text="Merchandise" /> */}
                     <Link to="/about">
                       <MobileLink url="/about" text="ABOUT" noBorder />
                     </Link>
                     <hr />
-                    {localStorage.getItem("token") == null ||
-                      localStorage.getItem("token") == undefined ? (
+                    {localStorage.getItem("token") === null ||
+                    localStorage.getItem("token") === undefined ? (
                       ""
                     ) : (
                       <Link
@@ -311,13 +245,9 @@ const Navbar = () => {
                           navigate("/");
                         }}
                       >
-                        {/* <i class="fa-solid fa-right-from-bracket"></i>{" "} */}
-
                         <MobileLink url="/" text="LOGOUT" />
                       </Link>
                     )}
-
-                    {/* <MobileLink url="/teams" text="Teams" noBorder /> */}
                   </List>
                 </Box>
               </StyledDrawer>
