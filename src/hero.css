@@ -22,3 +22,22 @@ h1 {
   font-weight: 500;
   font-weight: 800;
 }
+ 
+.floating-gradient {
+   
+   
+  animation: floatGradient 10s infinite linear;
+  background-color: linear-gradient(to right, pink-400, #0ff, #0f0);
+}
+
+@keyframes floatGradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
