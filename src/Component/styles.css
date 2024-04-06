@@ -1,3 +1,7 @@
+.countdown {
+	font-family: "Montserrat";
+}
+
 .countdown .content {
 	width: 100%;
 	display: flex;
@@ -30,6 +34,10 @@
 	box-shadow: -2px 0px 5px 1px #232423ad;
 }
 
+.countdown .label {
+	color: white;
+}
+
 @media screen and (min-width: 550px) {
 	.countdown .content {
 		gap: 30px;
@@ -43,4 +51,79 @@
 		height: 100px;
 		max-width: 100px;
 	}
+}
+
+.timeline {
+    color: white;
+    font-family: "Montserrat";
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, #000020, #00000D, #000030, #00000D, #000020); */
+    background: black;
+    background-size: 400% 400%;
+    animation: all gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.mainContent {
+    padding-top : 5vh;
+}
+
+.timeline .content {
+    padding-top : 5vh;
+}
+
+.timeline button {
+    border: 0;
+    padding: 1%;
+    width: 25vw;
+    color: white;
+    background: red;
+    font-size: 160%;
+    background: none;
+}
+
+.timeline button:hover {
+    color : white;
+}
+
+.vertical-timeline-element-content{
+    background-color: transparent;
+    border: 1px solid white;
+	color: white;
+}
+
+.vertical-timeline-element-content:hover {
+    color: red;
+}
+
+.timeline .title {
+    font-size: 280%;
+}
+
+@media only screen and (max-device-width: 480px){
+    .timeline button {
+        border: 1px solid white;
+        padding: 1%;
+        width: 100vw;
+        color: white;
+        background: black;
+        font-size: 150%;
+        background: none;
+    }
+    .timeline button:hover {
+        color: lightgreen;
+    }
 }

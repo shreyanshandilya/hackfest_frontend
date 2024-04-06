@@ -88,7 +88,7 @@ const Navbar = () => {
                       justifyContent: "space-around",
                     }}
                   >
-                    <Link to="/event">
+                    {/* <Link to="/event">
                       <StyledButton name="EVENTS" />
                     </Link>
                     <Link to="/accomodation">
@@ -104,7 +104,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/team">
                       <StyledButton name="CORE TEAM"></StyledButton>
-                    </Link>
+                    </Link> */}
                   </Box>
                   <Box
                     sx={{
@@ -161,7 +161,7 @@ const Navbar = () => {
                   {/* <Divider /> */}
 
                   <List>
-                    {localStorage.getItem("token") === null ||
+                    {/* {localStorage.getItem("token") === null ||
                     localStorage.getItem("token") === undefined ? (
                       <div>
                         <Link to={"/register"}>
@@ -248,7 +248,7 @@ const Navbar = () => {
                       >
                         <MobileLink url="/" text="LOGOUT" />
                       </Link>
-                    )}
+                    )} */}
                   </List>
                 </Box>
               </StyledDrawer>
