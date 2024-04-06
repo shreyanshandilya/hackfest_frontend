@@ -5,6 +5,8 @@ import Countdown from "./Component/Countdown";
 import logo from "./Group 48.png";
 import Nav from "./Navbar/navbar";
 import "./hero.css";
+import Timeline from "./Component/Timeline";
+import RegistrationButton from "./Component/RegistrationButton";
 
 function Hero() {
   const sponsor = useRef(null);
@@ -92,7 +94,7 @@ function Hero() {
               >
                 <br />
                 <div class="title">
-                  <h1>HACK FEST OF IIT (ISM)  DHANBAD  </h1>
+                  <h1>HACKFEST'24  IIT (ISM)  DHANBAD  </h1>
                 </div>
               </motion.p>
               <motion.p
@@ -108,16 +110,18 @@ function Hero() {
                 initial="hidden"
                 animate="show"
                 className="h-auto  overflow-y-hidden my-5 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fffff] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl"
+                style={{"fontFamily":"Montserrat"}}
               >
                 19 TO 21 APRIL, 2024
               </motion.span>
               <motion.div  className="h-auto  overflow-y-hidden my-1 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fffff] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl">
-                COMING SOON !!
+                <RegistrationButton />
               </motion.div>
             </motion.div>
           </motion.div>
         </motion.div>
       </Element>
+      <Timeline/>
     </>
   );
 }
