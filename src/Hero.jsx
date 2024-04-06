@@ -66,14 +66,14 @@ function Hero() {
           variants={bgAnimate}
           initial="hidden"
           animate="show"
-          className="max-w-screen flex justify-center items-center  bg-blend-multiply absolute inset-0 bg-gradient-to-r from-pink-400 via-blue-300 to-green-300 animate-floatGradient pt-[100px] max-h-screen"
+          className="max-w-screen flex justify-center items-center  bg-blend-multiply inset-0 bg-gradient-to-r from-pink-400 via-blue-300 to-green-300 animate-floatGradient"
            
         >
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="w-screen max-h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
+            className="w-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
           >
             <motion.div className="px-4 grid grid-row-3 gap-1 mx-auto max-w-screen-xl text-center py-24 lg:py-30">
               <motion.h1

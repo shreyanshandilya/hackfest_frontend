@@ -71,7 +71,7 @@ function Timeline() {
     const [Day0, setDay0] = React.useState(true);
 
     return (
-        <div className="timeline" style={{"marginTop":"100vh"}}>
+        <div className="timeline"  >
             <div className="mainContent">
                 <center>
                     <p className="title">TIMELINE</p>
