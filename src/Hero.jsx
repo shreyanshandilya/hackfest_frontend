@@ -5,6 +5,8 @@ import Countdown from "./Component/Countdown";
 import logo from "./Group 48.png";
 import Nav from "./Navbar/navbar";
 import "./hero.css";
+import Timeline from "./Component/Timeline";
+import RegistrationButton from "./Component/RegistrationButton";
 
 function Hero() {
   const sponsor = useRef(null);
@@ -64,13 +66,14 @@ function Hero() {
           variants={bgAnimate}
           initial="hidden"
           animate="show"
-          className="max-w-screen h-screen flex justify-center items-center  bg-blend-multiply bg-gradient-to-r from-pink-400 via-blue-300 to-green-300"
+          className="max-w-screen flex justify-center items-center  bg-blend-multiply inset-0 bg-gradient-to-r from-pink-400 via-blue-300 to-green-300 animate-floatGradient"
+           
         >
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="w-screen h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
+            className="w-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
           >
             <motion.div className="px-4 grid grid-row-3 gap-1 mx-auto max-w-screen-xl text-center py-24 lg:py-30">
               <motion.h1
@@ -91,7 +94,7 @@ function Hero() {
               >
                 <br />
                 <div class="title">
-                  <h1>HACK FEST OF IIT (ISM)  DHANBAD  </h1>
+                  <h1>HACKFEST'24  IIT (ISM)  DHANBAD  </h1>
                 </div>
               </motion.p>
               <motion.p
@@ -107,16 +110,18 @@ function Hero() {
                 initial="hidden"
                 animate="show"
                 className="h-auto  overflow-y-hidden my-5 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fffff] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl"
+                style={{"fontFamily":"Montserrat"}}
               >
                 19 TO 21 APRIL, 2024
               </motion.span>
               <motion.div  className="h-auto  overflow-y-hidden my-1 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fffff] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl">
-                COMING SOON !!
+                <RegistrationButton />
               </motion.div>
             </motion.div>
           </motion.div>
         </motion.div>
       </Element>
+      <Timeline/>
     </>
   );
 }

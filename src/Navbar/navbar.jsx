@@ -48,7 +48,7 @@ const Navbar = () => {
             <AppBar component="nav" className="navbar p-9">
               <Toolbar className="w-full toolbar">
                 <IconButton
-                  color="white"
+                  color="black"
                   aria-label="open drawer"
                   edge="start"
                   className="postion"
@@ -56,9 +56,9 @@ const Navbar = () => {
                   sx={{ mr: 2, display: { md: "none" } }}
                 >
                   {mobileOpen ? (
-                    <CloseIcon className="white" />
+                    <CloseIcon className="black" />
                   ) : (
-                    <MenuIcon className="white" />
+                    <MenuIcon className="black" />
                   )}
                 </IconButton>
                 <Box
@@ -88,7 +88,7 @@ const Navbar = () => {
                       justifyContent: "space-around",
                     }}
                   >
-                    <Link to="/event">
+                    {/* <Link to="/event">
                       <StyledButton name="EVENTS" />
                     </Link>
                     <Link to="/accomodation">
@@ -104,7 +104,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/team">
                       <StyledButton name="CORE TEAM"></StyledButton>
-                    </Link>
+                    </Link> */}
                   </Box>
                   <Box
                     sx={{
@@ -115,7 +115,7 @@ const Navbar = () => {
                     }}
                   >
                     <IconButton
-                      color="inherit"
+                      color="black"
                       component="a"
                       target="_blank"
                       href="https://play.google.com/store/apps/details?id=com.iitism.concetto&pli=1"
@@ -143,7 +143,7 @@ const Navbar = () => {
                     width: "100vw",
                     height: "100vh",
                     background: "#171717",
-                    color: "#fff",
+                    color: "#000000",
                     display: "flex",
                     alignItems: "center",
                     flexDirection: "column",
@@ -155,12 +155,13 @@ const Navbar = () => {
                   onClick={handleDrawerToggle}
                   sx={{
                     textAlign: "center",
+                    color:"black"
                   }}
                 >
                   {/* <Divider /> */}
 
                   <List>
-                    {localStorage.getItem("token") === null ||
+                    {/* {localStorage.getItem("token") === null ||
                     localStorage.getItem("token") === undefined ? (
                       <div>
                         <Link to={"/register"}>
@@ -247,7 +248,7 @@ const Navbar = () => {
                       >
                         <MobileLink url="/" text="LOGOUT" />
                       </Link>
-                    )}
+                    )} */}
                   </List>
                 </Box>
               </StyledDrawer>
