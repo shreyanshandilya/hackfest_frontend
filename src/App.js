@@ -8,7 +8,7 @@ import {
 import AboutPage from "./pages/AboutPage";
 import Home from "./pages/home";
 
-function App() {
+export default function App() {
    let router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" elemenet={<Home />}>
