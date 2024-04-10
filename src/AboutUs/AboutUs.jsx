@@ -11,10 +11,10 @@ function AboutUs() {
   return (
     <>
       <Navbar />
-      <div className="bg-[url('https://media.gettyimages.com/id/466343215/photo/miami-fl-salvi-pascual-and-daniel-arzuaga-use-their-computers-to-write-code-for-a-program.jpg?s=612x612&w=0&k=20&c=v2bhVxcf7tAYObE3Cbjsl4SxmkySNkPQAohFQ4vsqOo=')] bg-cover bg-no-repeat bg-[#0d0c06] jusitfy-center items-center mt-5 h-full w-full backdrop-brightness-50">
+      <div className="bg-[url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhhY2tlcnxlbnwwfHwwfHx8MA%3D%3D')] bg-cover bg-no-repeat bg-[#0d0c06] jusitfy-center items-center mt-5 h-full w-full backdrop-brightness-50">
         <div className=" px-2  text-center  py-20">
          
-            <h1 className="mb-8 mt-10  tracking-tight leading-none text-[#5b4ce3] text-6xl font-serif ">
+            <h1 className="mb-8 mt-10  tracking-tight leading-none text-[#f0f0f0] text-6xl font-serif ">
               About { " "}Us
             </h1>
       
@@ -26,14 +26,16 @@ function AboutUs() {
             transition={{ duration: 1 }}
             className=" mx-[6vw] md:mx-[10vw] flex justify-center items-center bg-white/30 backdrop-blur-md rounded-lg shadow mb-10"
           >
-            <div className="flex flex-col items-center py-10 px-10 ">
+            <div className="flex flex-col items-center py-10 px-5 ">
               <img
                 className="w-24 h-24 mb-3 rounded-full shadow-lg"
                 src={logo}
                 alt="Prof. Sanjoy Mandal"
               />
-              <h5 className="mb-1 text-2xl  font-sans text-center  text-[#f9f9f9]">
+              <h5 className="mb-1 text-2xl   text-center  text-[#f9f9f9]">
+                <div style={{fontFamily : "Raleway"}}>
                 IIT ISM DHANBAD
+                </div>
               </h5>
 
               <div className="flex mt-4 md:mt-6 text-[#0d0c06]  text-2xl  font-600 ">
