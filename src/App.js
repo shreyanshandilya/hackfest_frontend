@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import Home from "./pages/home";
+import ProblemPage from "./pages/Problems";
 
 export default function App() {
    let router = createBrowserRouter(
@@ -14,6 +15,7 @@ export default function App() {
       <>
       <Route path="/" element={<Home />}/> 
         <Route path="about" element={<AboutPage />} />
+        <Route path="problems" element={<ProblemPage/>} />
         </>
          
     )
