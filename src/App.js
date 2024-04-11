@@ -10,11 +10,12 @@ import Home from "./pages/home";
 
 export default function App() {
    let router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" elemenet={<Home />}>
+     createRoutesFromElements(
+      <>
+      <Route path="/" element={<Home />}/> 
         <Route path="about" element={<AboutPage />} />
-
-      </Route>
+        </>
+         
     )
   );
 

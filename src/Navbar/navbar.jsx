@@ -85,9 +85,12 @@ const Navbar = () => {
                         md: "flex",
                       },
                       flexGrow: 1,
-                      justifyContent: "space-around",
+                      
                     }}
                   >
+                    <Link to="/about">
+                      <StyledButton name="ABOUT US"></StyledButton>
+                    </Link>
                     {/* <Link to="/event">
                       <StyledButton name="EVENTS" />
                     </Link>
@@ -99,9 +102,7 @@ const Navbar = () => {
                       <StyledButton name="MERCHANDISE" />
                     </Link>
 
-                    <Link to="/about">
-                      <StyledButton name="ABOUT"></StyledButton>
-                    </Link>
+                    
                     <Link to="/team">
                       <StyledButton name="CORE TEAM"></StyledButton>
                     </Link> */}
@@ -161,6 +162,9 @@ const Navbar = () => {
                   {/* <Divider /> */}
 
                   <List>
+                  <Link to="/about">
+                      <MobileLink url="/about" text="ABOUT" noBorder />
+                    </Link>
                     {/* {localStorage.getItem("token") === null ||
                     localStorage.getItem("token") === undefined ? (
                       <div>
