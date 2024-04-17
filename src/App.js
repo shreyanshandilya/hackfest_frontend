@@ -1,22 +1,29 @@
-import Hero from "./Hero";
 import "./App.css";
-import Navbar from "./Navbar/navbar";
-import { BrowserRouter } from "react-router-dom";
-// import Timeline from "./Component/Timeline";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  createRoutesFromElements,
+} from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
+import Home from "./pages/home";
+import ProblemPage from "./pages/Problems";
 
-function App() {
+export default function App() {
+   let router = createBrowserRouter(
+     createRoutesFromElements(
+      <>
+      <Route path="/" element={<Home />}/> 
+        <Route path="about" element={<AboutPage />} />
+        <Route path="problems" element={<ProblemPage/>} />
+        </>
+         
+    )
+  );
+
   return (
     <>
-      <BrowserRouter>
-        {" "}
-        <div>
-          <Navbar />
-          <Hero />
-          {/* <Timeline /> */}
-        </div>
-      </BrowserRouter>
+        <RouterProvider router={router} />
     </>
   );
 }
-
-export default App;

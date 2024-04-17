@@ -18,7 +18,6 @@ import Button from "@mui/material/Button";
 import { Link, Outlet } from "react-router-dom";
 import Wrapper from "./styles";
 
-
 const StyledDrawer = styled(Drawer)({
   ".bottomBar": {
     borderTop: "1px solid #fff",
@@ -85,9 +84,11 @@ const Navbar = () => {
                         md: "flex",
                       },
                       flexGrow: 1,
-                      justifyContent: "space-around",
                     }}
                   >
+                    <Link to="/about">
+                      <StyledButton name="ABOUT US"></StyledButton>
+                    </Link>
                     {/* <Link to="/event">
                       <StyledButton name="EVENTS" />
                     </Link>
@@ -99,9 +100,7 @@ const Navbar = () => {
                       <StyledButton name="MERCHANDISE" />
                     </Link>
 
-                    <Link to="/about">
-                      <StyledButton name="ABOUT"></StyledButton>
-                    </Link>
+                    
                     <Link to="/team">
                       <StyledButton name="CORE TEAM"></StyledButton>
                     </Link> */}
@@ -155,46 +154,25 @@ const Navbar = () => {
                   onClick={handleDrawerToggle}
                   sx={{
                     textAlign: "center",
-                    color:"black"
+                    color: "black",
                   }}
                 >
                   {/* <Divider /> */}
 
                   <List>
-                    {/* {localStorage.getItem("token") === null ||
-                    localStorage.getItem("token") === undefined ? (
-                      <div>
-                        <Link to={"/register"}>
-                          <MobileLink url="/register" text="REGISTER" />
-                        </Link>
-                        <Link to={"/login"}>
-                          <MobileLink url="/login" text="LOGIN" />
-                        </Link>
-                      </div>
-                    ) : (
-                      <div>
-                        <Link to={"/"}>
-                          <MobileLink
-                            url="/"
-                            text={localStorage.getItem("email")}
-                          />
-                        </Link>
-                      </div>
-                    )}
-
-                    <Link to={"/event"}>
-                      <MobileLink url="/event" text="EVENTS" />
+                    <Link to="/about">
+                      <MobileLink url="/about" text="ABOUT" noBorder />
                     </Link>
-                    <Link to={"/accomodation"}>
-                      {" "}
+                    <Link to="/problems">
                       <MobileLink
-                        text="ACCOMODATION"
-                        component="a"
-                        url="/merchant"
-                        target="_blank"
-                        rel="noreferrer"
+                        url="/problems"
+                        text="PROBLEM STATEMENT"
+                        noBorder
                       />
                     </Link>
+                    {/* 
+
+                
 
                     <Link to={"/merchant"}>
                       <MobileLink
