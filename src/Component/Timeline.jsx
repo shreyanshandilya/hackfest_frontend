@@ -5,44 +5,44 @@ import './styles.css';
 
 const events = [
     {
-        "date": "6 April, 2024",
-        "time": "12:00 AM",
+        "date": "17 April, 2024",
+        "time": "9:00 PM",
         "event": "Registration Begins",
         "venue": "UNSTOP"
     },
     {
-        "date": "11 April, 2024",
+        "date": "28 April, 2024",
         "time": "11:59 PM",
         "event": "Registration Ends",
         "venue": "UNSTOP"
     },
     {
-        "date": "12 April, 2024",
+        "date": "30 April, 2024",
         "time": "12:00 AM",
         "event": "SHORTLISTING",
         "venue": "ONLINE"
     },
     {
-        "date": "19 April, 2024",
+        "date": "10 May, 2024",
         "time": "11:59 AM",
         "event": "Hack Begins",
         "venue": "IIT (ISM) DHANBAD"
     },
     {
-        "date": "21 April, 2024",
+        "date": "12 May, 2024",
         "time": "12:00 PM",
         "event": "Hack Ends",
         "venue": "IIT (ISM) DHANBAD"
     },
     {
-        "date": "21 April, 2024",
-        "time": "06:00 AM",
+        "date": "12 May, 2024",
+        "time": "12:00 PM",
         "event": "SUBMISSION BEGINS ",
         "venue": "IIT (ISM) DHANBAD"
     },
     {
-        "date": "21 April, 2024",
-        "time": "12:00 PM",
+        "date": "12 May, 2024",
+        "time": "12:30 PM",
         "event": "SUBMISSION ENDS",
         "venue": "IIT (ISM) DHANBAD"
     }
