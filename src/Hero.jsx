@@ -112,7 +112,7 @@ function Hero() {
                 className="h-auto  overflow-y-hidden my-5 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fffff] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl"
                 style={{"fontFamily":"Montserrat"}}
               >
-                19 TO 21 APRIL, 2024
+                10 TO 12 MAY , 2024
               </motion.span>
               <motion.div  className="h-auto  overflow-y-hidden my-1 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fffff] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl">
                 <RegistrationButton />
