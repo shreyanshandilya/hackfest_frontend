@@ -24,7 +24,7 @@ const events = [
     },
     {
         "date": "10 May, 2024",
-        "time": "11:59 AM",
+        "time": "11:59 PM",
         "event": "Hack Begins",
         "venue": "IIT (ISM) DHANBAD"
     },
